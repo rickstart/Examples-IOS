@@ -64,6 +64,9 @@ class ToDoListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("Selected cell \(indexPath.row+1)")
+        tableview.deselectRowAtIndexPath(indexPath, animated: true)
+        items[indexPath.row].color = UIColor.greenColor()
+        tableview.reloadData()
     }
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
