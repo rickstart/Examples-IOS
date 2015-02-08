@@ -15,6 +15,8 @@
 		C4649FD51A7D80AE00B63C0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4649FD31A7D80AE00B63C0B /* LaunchScreen.xib */; };
 		C4649FE11A7D80AE00B63C0B /* MyToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4649FE01A7D80AE00B63C0B /* MyToDoListTests.swift */; };
 		C4649FEB1A7D810800B63C0B /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4649FEA1A7D810800B63C0B /* ToDoListViewController.swift */; };
+		C4B3BA481A86C48200A3A795 /* CreateToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3BA471A86C48200A3A795 /* CreateToDoViewController.swift */; };
+		C4B3BA4A1A86E44A00A3A795 /* SelectColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3BA491A86E44A00A3A795 /* SelectColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		C4649FDF1A7D80AE00B63C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4649FE01A7D80AE00B63C0B /* MyToDoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToDoListTests.swift; sourceTree = "<group>"; };
 		C4649FEA1A7D810800B63C0B /* ToDoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		C4B3BA471A86C48200A3A795 /* CreateToDoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateToDoViewController.swift; sourceTree = "<group>"; };
+		C4B3BA491A86E44A00A3A795 /* SelectColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				C4649FC71A7D80AE00B63C0B /* AppDelegate.swift */,
 				C4649FCC1A7D80AE00B63C0B /* ViewController.swift */,
 				C4649FEA1A7D810800B63C0B /* ToDoListViewController.swift */,
+				C4B3BA471A86C48200A3A795 /* CreateToDoViewController.swift */,
+				C4B3BA491A86E44A00A3A795 /* SelectColorViewController.swift */,
 				C4649FCE1A7D80AE00B63C0B /* Main.storyboard */,
 				C4649FD11A7D80AE00B63C0B /* Images.xcassets */,
 				C4649FD31A7D80AE00B63C0B /* LaunchScreen.xib */,
@@ -220,7 +226,9 @@
 			files = (
 				C4649FEB1A7D810800B63C0B /* ToDoListViewController.swift in Sources */,
 				C4649FCD1A7D80AE00B63C0B /* ViewController.swift in Sources */,
+				C4B3BA481A86C48200A3A795 /* CreateToDoViewController.swift in Sources */,
 				C4649FC81A7D80AE00B63C0B /* AppDelegate.swift in Sources */,
+				C4B3BA4A1A86E44A00A3A795 /* SelectColorViewController.swift in Sources */,
 				C4649FCB1A7D80AE00B63C0B /* MyToDoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +423,7 @@
 				C4649FE61A7D80AE00B63C0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4649FE71A7D80AE00B63C0B /* Build configuration list for PBXNativeTarget "MyToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +432,7 @@
 				C4649FE91A7D80AE00B63C0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
