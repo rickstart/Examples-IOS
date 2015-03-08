@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ya3-RX-pB4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Google Maps-->
+        <scene sceneID="MUP-SJ-UX4">
+            <objects>
+                <viewController id="ZZO-BS-aRe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xDj-b6-sbo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Igi-Id-GHd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7pS-Cg-Yau">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google Maps" id="qwp-yW-ANQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B4k-dZ-flW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="1151"/>
+        </scene>
+        <!--IOS MAPS-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapKitTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="H8i-hH-q1e">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ulc-pz-v6a"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUS-nJ-KMw">
+                                <rect key="frame" x="508" y="562" width="76" height="30"/>
+                                <state key="normal" title="SHOW PIN">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pinButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rHp-fj-MnD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H8i-hH-q1e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="2Ig-cC-Zc6"/>
+                            <constraint firstItem="AUS-nJ-KMw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SVu-XU-0Zt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AUS-nJ-KMw" secondAttribute="bottom" constant="8" id="c5U-Y9-eNK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H8i-hH-q1e" secondAttribute="trailing" constant="-16" id="jh2-L9-ZSc"/>
+                            <constraint firstItem="H8i-hH-q1e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="pBU-fb-vHI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H8i-hH-q1e" secondAttribute="bottom" id="pKd-VH-9Ny"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="IOS MAPS" id="tL6-To-zSd"/>
+                    <connections>
+                        <outlet property="mapView" destination="H8i-hH-q1e" id="oGu-pG-asA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1512" y="457"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="j0W-ru-19r">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ya3-RX-pB4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="LXW-kG-29X">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="YWg-6V-imM"/>
+                        <segue destination="ZZO-BS-aRe" kind="relationship" relationship="viewControllers" id="e1H-r2-4mI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBX-FL-gaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="457"/>
+        </scene>
+    </scenes>
+</document>
