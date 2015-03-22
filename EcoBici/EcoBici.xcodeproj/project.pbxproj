@@ -25,6 +25,9 @@
 		C4AE75531AABBAE800327083 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AE754A1AABBAE800327083 /* AFURLSessionManager.m */; };
 		C4AE75571AABBDE000327083 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE75561AABBDE000327083 /* MapViewController.swift */; };
 		C4AE75591AABC8A900327083 /* EBStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE75581AABC8A900327083 /* EBStation.swift */; };
+		C4BD73991ABE308F008D1636 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD73981ABE308F008D1636 /* LocationManager.swift */; };
+		C4BD739C1ABE412F008D1636 /* mark.png in Resources */ = {isa = PBXBuildFile; fileRef = C4BD739A1ABE412F008D1636 /* mark.png */; };
+		C4BD739D1ABE412F008D1636 /* mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4BD739B1ABE412F008D1636 /* mark@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		C4AE75551AABBD8400327083 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		C4AE75561AABBDE000327083 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C4AE75581AABC8A900327083 /* EBStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBStation.swift; sourceTree = "<group>"; };
+		C4BD73981ABE308F008D1636 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C4BD739A1ABE412F008D1636 /* mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mark.png; path = ../../../../Downloads/mark.png; sourceTree = "<group>"; };
+		C4BD739B1ABE412F008D1636 /* mark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mark@2x.png"; path = "../../../../Downloads/mark@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +121,12 @@
 		C4AE74F51AABB9FE00327083 /* EcoBici */ = {
 			isa = PBXGroup;
 			children = (
+				C4BD739E1ABE417D008D1636 /* images */,
 				C4AE74F81AABB9FE00327083 /* AppDelegate.swift */,
 				C4AE75551AABBD8400327083 /* Bridge.h */,
 				C4AE74FA1AABB9FE00327083 /* ViewController.swift */,
 				C4AE75581AABC8A900327083 /* EBStation.swift */,
+				C4BD73981ABE308F008D1636 /* LocationManager.swift */,
 				C4AE75561AABBDE000327083 /* MapViewController.swift */,
 				C4AE74FC1AABB9FE00327083 /* Main.storyboard */,
 				C4AE74FF1AABB9FE00327083 /* Images.xcassets */,
@@ -178,6 +186,15 @@
 			);
 			name = AFNetworking;
 			path = "../../../Downloads/AFNetworking-2.3.1/AFNetworking";
+			sourceTree = "<group>";
+		};
+		C4BD739E1ABE417D008D1636 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD739A1ABE412F008D1636 /* mark.png */,
+				C4BD739B1ABE412F008D1636 /* mark@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +279,9 @@
 			files = (
 				C4AE74FE1AABB9FE00327083 /* Main.storyboard in Resources */,
 				C4AE75031AABB9FE00327083 /* LaunchScreen.xib in Resources */,
+				C4BD739C1ABE412F008D1636 /* mark.png in Resources */,
 				C4AE75001AABB9FE00327083 /* Images.xcassets in Resources */,
+				C4BD739D1ABE412F008D1636 /* mark@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +309,7 @@
 				C4AE75591AABC8A900327083 /* EBStation.swift in Sources */,
 				C4AE75571AABBDE000327083 /* MapViewController.swift in Sources */,
 				C4AE754D1AABBAE800327083 /* AFHTTPSessionManager.m in Sources */,
+				C4BD73991ABE308F008D1636 /* LocationManager.swift in Sources */,
 				C4AE754C1AABBAE800327083 /* AFHTTPRequestOperationManager.m in Sources */,
 				C4AE754E1AABBAE800327083 /* AFNetworkReachabilityManager.m in Sources */,
 				C4AE74F91AABB9FE00327083 /* AppDelegate.swift in Sources */,
@@ -490,6 +510,7 @@
 				C4AE75141AABB9FE00327083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4AE75151AABB9FE00327083 /* Build configuration list for PBXNativeTarget "EcoBiciTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +519,7 @@
 				C4AE75171AABB9FE00327083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

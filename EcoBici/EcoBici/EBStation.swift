@@ -50,13 +50,19 @@ class EBStationMark: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
     var title: String
     var subtitle: String
+    var location: CLLocation
+    var ebStation: EBStation
+   
     
     init(station: EBStation){
         
         
         self.coordinate = CLLocationCoordinate2DMake((station.latitude as NSString).doubleValue, (station.longitude as NSString).doubleValue)
         self.title = station.stationName
-        self.subtitle = "\(station.numberOfPlaces) Bicicletas \(station.numberOfBicycles) Disponibles"
+        self.subtitle = "\(station.numberOfBicycles) Bicicletas \(station.numberOfPlaces) Lugares"
+        self.location = CLLocation(latitude: (station.latitude as NSString).doubleValue, longitude: (station.longitude as NSString).doubleValue)
+        self.ebStation = station
+        
         
         
     }

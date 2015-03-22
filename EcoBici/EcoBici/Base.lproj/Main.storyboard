@@ -23,17 +23,70 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="osp-eX-KFS"/>
                                 </connections>
                             </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhF-ku-d03">
+                                <rect key="frame" x="0.0" y="534" width="600" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Station Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8J-CG-MmM">
+                                        <rect key="frame" x="8" y="8" width="584" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="mN0-9Q-iXh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Bicycles and Available" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wv9-wY-FlH">
+                                        <rect key="frame" x="8" y="37" width="584" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="LNy-jq-gFL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Wv9-wY-FlH" secondAttribute="trailing" constant="8" id="3cL-yD-AXh"/>
+                                    <constraint firstItem="Wv9-wY-FlH" firstAttribute="top" secondItem="q8J-CG-MmM" secondAttribute="bottom" constant="8" id="Khs-CO-ANl"/>
+                                    <constraint firstItem="q8J-CG-MmM" firstAttribute="top" secondItem="AhF-ku-d03" secondAttribute="top" constant="8" id="Kyi-dI-hj5"/>
+                                    <constraint firstItem="q8J-CG-MmM" firstAttribute="leading" secondItem="AhF-ku-d03" secondAttribute="leading" constant="8" id="UTw-kW-o5Y"/>
+                                    <constraint firstItem="Wv9-wY-FlH" firstAttribute="leading" secondItem="AhF-ku-d03" secondAttribute="leading" constant="8" id="VB8-Ie-VCQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="q8J-CG-MmM" secondAttribute="trailing" constant="8" id="fz7-3T-znx"/>
+                                    <constraint firstAttribute="height" constant="66" id="gja-hn-oDQ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9s-CF-1pc">
+                                <rect key="frame" x="507" y="496" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="hJw-dW-L6D"/>
+                                    <constraint firstAttribute="height" constant="30" id="v7b-rk-G1c"/>
+                                </constraints>
+                                <state key="normal" title="Location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LocationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zpn-4P-Zs9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bp4-Ak-irM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Bka-FI-lnU"/>
+                            <constraint firstItem="AhF-ku-d03" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="KtV-fg-1gb"/>
+                            <constraint firstItem="AhF-ku-d03" firstAttribute="top" secondItem="l9s-CF-1pc" secondAttribute="bottom" constant="8" id="OGD-I5-ap9"/>
                             <constraint firstItem="bp4-Ak-irM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Obf-3S-7dw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AhF-ku-d03" secondAttribute="bottom" id="X5D-pZ-VBe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bp4-Ak-irM" secondAttribute="trailing" constant="-16" id="kP8-Rd-R2C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AhF-ku-d03" secondAttribute="trailing" constant="-16" id="oVi-u6-jsO"/>
                             <constraint firstAttribute="bottomMargin" secondItem="bp4-Ak-irM" secondAttribute="bottom" id="qt0-Vr-YZf"/>
+                            <constraint firstItem="l9s-CF-1pc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zSi-sx-jyl"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bicyclesLabel" destination="Wv9-wY-FlH" id="aYi-d3-CDO"/>
                         <outlet property="mapView" destination="bp4-Ak-irM" id="Acl-BL-Stu"/>
+                        <outlet property="stationNameLabel" destination="q8J-CG-MmM" id="4CH-Cl-5br"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
