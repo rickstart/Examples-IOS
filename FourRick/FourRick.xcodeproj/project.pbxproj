@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C42A39421AE2FB9200BB1CB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A39411AE2FB9200BB1CB4 /* AppDelegate.swift */; };
+		C42A39441AE2FB9200BB1CB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A39431AE2FB9200BB1CB4 /* ViewController.swift */; };
+		C42A39471AE2FB9200BB1CB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42A39451AE2FB9200BB1CB4 /* Main.storyboard */; };
+		C42A39491AE2FB9200BB1CB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42A39481AE2FB9200BB1CB4 /* Images.xcassets */; };
+		C42A394C1AE2FB9200BB1CB4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42A394A1AE2FB9200BB1CB4 /* LaunchScreen.xib */; };
+		C42A39581AE2FB9200BB1CB4 /* FourRickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A39571AE2FB9200BB1CB4 /* FourRickTests.swift */; };
+		C42A39761AE3024500BB1CB4 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A39641AE3024500BB1CB4 /* AFHTTPRequestOperation.m */; };
+		C42A39771AE3024500BB1CB4 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A39661AE3024500BB1CB4 /* AFHTTPRequestOperationManager.m */; };
+		C42A39781AE3024500BB1CB4 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A39681AE3024500BB1CB4 /* AFHTTPSessionManager.m */; };
+		C42A39791AE3024500BB1CB4 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A396B1AE3024500BB1CB4 /* AFNetworkReachabilityManager.m */; };
+		C42A397A1AE3024500BB1CB4 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A396D1AE3024500BB1CB4 /* AFSecurityPolicy.m */; };
+		C42A397B1AE3024500BB1CB4 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A396F1AE3024500BB1CB4 /* AFURLConnectionOperation.m */; };
+		C42A397C1AE3024500BB1CB4 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A39711AE3024500BB1CB4 /* AFURLRequestSerialization.m */; };
+		C42A397D1AE3024500BB1CB4 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A39731AE3024500BB1CB4 /* AFURLResponseSerialization.m */; };
+		C42A397E1AE3024500BB1CB4 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A39751AE3024500BB1CB4 /* AFURLSessionManager.m */; };
+		C42A39801AE3033300BB1CB4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42A397F1AE3033300BB1CB4 /* MapKit.framework */; };
+		C42A39821AE3090500BB1CB4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A39811AE3090500BB1CB4 /* LocationManager.swift */; };
+		C42A39841AE3103100BB1CB4 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A39831AE3103100BB1CB4 /* Venue.swift */; };
+		C42A39861AE3136F00BB1CB4 /* VenueMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A39851AE3136F00BB1CB4 /* VenueMark.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C42A39521AE2FB9200BB1CB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C42A39341AE2FB9200BB1CB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C42A393B1AE2FB9200BB1CB4;
+			remoteInfo = FourRick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C42A393C1AE2FB9200BB1CB4 /* FourRick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourRick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42A39401AE2FB9200BB1CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42A39411AE2FB9200BB1CB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C42A39431AE2FB9200BB1CB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C42A39461AE2FB9200BB1CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C42A39481AE2FB9200BB1CB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C42A394B1AE2FB9200BB1CB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C42A39511AE2FB9200BB1CB4 /* FourRickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourRickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42A39561AE2FB9200BB1CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42A39571AE2FB9200BB1CB4 /* FourRickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourRickTests.swift; sourceTree = "<group>"; };
+		C42A39611AE300EC00BB1CB4 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		C42A39631AE3024500BB1CB4 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		C42A39641AE3024500BB1CB4 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		C42A39651AE3024500BB1CB4 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		C42A39661AE3024500BB1CB4 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		C42A39671AE3024500BB1CB4 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		C42A39681AE3024500BB1CB4 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		C42A39691AE3024500BB1CB4 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		C42A396A1AE3024500BB1CB4 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		C42A396B1AE3024500BB1CB4 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		C42A396C1AE3024500BB1CB4 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		C42A396D1AE3024500BB1CB4 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		C42A396E1AE3024500BB1CB4 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		C42A396F1AE3024500BB1CB4 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		C42A39701AE3024500BB1CB4 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		C42A39711AE3024500BB1CB4 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		C42A39721AE3024500BB1CB4 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		C42A39731AE3024500BB1CB4 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		C42A39741AE3024500BB1CB4 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		C42A39751AE3024500BB1CB4 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		C42A397F1AE3033300BB1CB4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C42A39811AE3090500BB1CB4 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C42A39831AE3103100BB1CB4 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		C42A39851AE3136F00BB1CB4 /* VenueMark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueMark.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C42A39391AE2FB9200BB1CB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42A39801AE3033300BB1CB4 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42A394E1AE2FB9200BB1CB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C42A39331AE2FB9200BB1CB4 = {
+			isa = PBXGroup;
+			children = (
+				C42A397F1AE3033300BB1CB4 /* MapKit.framework */,
+				C42A39621AE3024500BB1CB4 /* AFNetworking */,
+				C42A393E1AE2FB9200BB1CB4 /* FourRick */,
+				C42A39541AE2FB9200BB1CB4 /* FourRickTests */,
+				C42A393D1AE2FB9200BB1CB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C42A393D1AE2FB9200BB1CB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C42A393C1AE2FB9200BB1CB4 /* FourRick.app */,
+				C42A39511AE2FB9200BB1CB4 /* FourRickTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C42A393E1AE2FB9200BB1CB4 /* FourRick */ = {
+			isa = PBXGroup;
+			children = (
+				C42A39411AE2FB9200BB1CB4 /* AppDelegate.swift */,
+				C42A39431AE2FB9200BB1CB4 /* ViewController.swift */,
+				C42A39451AE2FB9200BB1CB4 /* Main.storyboard */,
+				C42A39481AE2FB9200BB1CB4 /* Images.xcassets */,
+				C42A394A1AE2FB9200BB1CB4 /* LaunchScreen.xib */,
+				C42A393F1AE2FB9200BB1CB4 /* Supporting Files */,
+				C42A39611AE300EC00BB1CB4 /* Bridge.h */,
+				C42A39811AE3090500BB1CB4 /* LocationManager.swift */,
+				C42A39831AE3103100BB1CB4 /* Venue.swift */,
+				C42A39851AE3136F00BB1CB4 /* VenueMark.swift */,
+			);
+			path = FourRick;
+			sourceTree = "<group>";
+		};
+		C42A393F1AE2FB9200BB1CB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C42A39401AE2FB9200BB1CB4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C42A39541AE2FB9200BB1CB4 /* FourRickTests */ = {
+			isa = PBXGroup;
+			children = (
+				C42A39571AE2FB9200BB1CB4 /* FourRickTests.swift */,
+				C42A39551AE2FB9200BB1CB4 /* Supporting Files */,
+			);
+			path = FourRickTests;
+			sourceTree = "<group>";
+		};
+		C42A39551AE2FB9200BB1CB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C42A39561AE2FB9200BB1CB4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C42A39621AE3024500BB1CB4 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				C42A39631AE3024500BB1CB4 /* AFHTTPRequestOperation.h */,
+				C42A39641AE3024500BB1CB4 /* AFHTTPRequestOperation.m */,
+				C42A39651AE3024500BB1CB4 /* AFHTTPRequestOperationManager.h */,
+				C42A39661AE3024500BB1CB4 /* AFHTTPRequestOperationManager.m */,
+				C42A39671AE3024500BB1CB4 /* AFHTTPSessionManager.h */,
+				C42A39681AE3024500BB1CB4 /* AFHTTPSessionManager.m */,
+				C42A39691AE3024500BB1CB4 /* AFNetworking.h */,
+				C42A396A1AE3024500BB1CB4 /* AFNetworkReachabilityManager.h */,
+				C42A396B1AE3024500BB1CB4 /* AFNetworkReachabilityManager.m */,
+				C42A396C1AE3024500BB1CB4 /* AFSecurityPolicy.h */,
+				C42A396D1AE3024500BB1CB4 /* AFSecurityPolicy.m */,
+				C42A396E1AE3024500BB1CB4 /* AFURLConnectionOperation.h */,
+				C42A396F1AE3024500BB1CB4 /* AFURLConnectionOperation.m */,
+				C42A39701AE3024500BB1CB4 /* AFURLRequestSerialization.h */,
+				C42A39711AE3024500BB1CB4 /* AFURLRequestSerialization.m */,
+				C42A39721AE3024500BB1CB4 /* AFURLResponseSerialization.h */,
+				C42A39731AE3024500BB1CB4 /* AFURLResponseSerialization.m */,
+				C42A39741AE3024500BB1CB4 /* AFURLSessionManager.h */,
+				C42A39751AE3024500BB1CB4 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C42A393B1AE2FB9200BB1CB4 /* FourRick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42A395B1AE2FB9200BB1CB4 /* Build configuration list for PBXNativeTarget "FourRick" */;
+			buildPhases = (
+				C42A39381AE2FB9200BB1CB4 /* Sources */,
+				C42A39391AE2FB9200BB1CB4 /* Frameworks */,
+				C42A393A1AE2FB9200BB1CB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FourRick;
+			productName = FourRick;
+			productReference = C42A393C1AE2FB9200BB1CB4 /* FourRick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C42A39501AE2FB9200BB1CB4 /* FourRickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42A395E1AE2FB9200BB1CB4 /* Build configuration list for PBXNativeTarget "FourRickTests" */;
+			buildPhases = (
+				C42A394D1AE2FB9200BB1CB4 /* Sources */,
+				C42A394E1AE2FB9200BB1CB4 /* Frameworks */,
+				C42A394F1AE2FB9200BB1CB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C42A39531AE2FB9200BB1CB4 /* PBXTargetDependency */,
+			);
+			name = FourRickTests;
+			productName = FourRickTests;
+			productReference = C42A39511AE2FB9200BB1CB4 /* FourRickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C42A39341AE2FB9200BB1CB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Mobintum;
+				TargetAttributes = {
+					C42A393B1AE2FB9200BB1CB4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					C42A39501AE2FB9200BB1CB4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = C42A393B1AE2FB9200BB1CB4;
+					};
+				};
+			};
+			buildConfigurationList = C42A39371AE2FB9200BB1CB4 /* Build configuration list for PBXProject "FourRick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C42A39331AE2FB9200BB1CB4;
+			productRefGroup = C42A393D1AE2FB9200BB1CB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C42A393B1AE2FB9200BB1CB4 /* FourRick */,
+				C42A39501AE2FB9200BB1CB4 /* FourRickTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C42A393A1AE2FB9200BB1CB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42A39471AE2FB9200BB1CB4 /* Main.storyboard in Resources */,
+				C42A394C1AE2FB9200BB1CB4 /* LaunchScreen.xib in Resources */,
+				C42A39491AE2FB9200BB1CB4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42A394F1AE2FB9200BB1CB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C42A39381AE2FB9200BB1CB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42A397C1AE3024500BB1CB4 /* AFURLRequestSerialization.m in Sources */,
+				C42A397B1AE3024500BB1CB4 /* AFURLConnectionOperation.m in Sources */,
+				C42A397A1AE3024500BB1CB4 /* AFSecurityPolicy.m in Sources */,
+				C42A39761AE3024500BB1CB4 /* AFHTTPRequestOperation.m in Sources */,
+				C42A39861AE3136F00BB1CB4 /* VenueMark.swift in Sources */,
+				C42A397E1AE3024500BB1CB4 /* AFURLSessionManager.m in Sources */,
+				C42A397D1AE3024500BB1CB4 /* AFURLResponseSerialization.m in Sources */,
+				C42A39441AE2FB9200BB1CB4 /* ViewController.swift in Sources */,
+				C42A39781AE3024500BB1CB4 /* AFHTTPSessionManager.m in Sources */,
+				C42A39821AE3090500BB1CB4 /* LocationManager.swift in Sources */,
+				C42A39771AE3024500BB1CB4 /* AFHTTPRequestOperationManager.m in Sources */,
+				C42A39791AE3024500BB1CB4 /* AFNetworkReachabilityManager.m in Sources */,
+				C42A39841AE3103100BB1CB4 /* Venue.swift in Sources */,
+				C42A39421AE2FB9200BB1CB4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42A394D1AE2FB9200BB1CB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42A39581AE2FB9200BB1CB4 /* FourRickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C42A39531AE2FB9200BB1CB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C42A393B1AE2FB9200BB1CB4 /* FourRick */;
+			targetProxy = C42A39521AE2FB9200BB1CB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C42A39451AE2FB9200BB1CB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C42A39461AE2FB9200BB1CB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C42A394A1AE2FB9200BB1CB4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C42A394B1AE2FB9200BB1CB4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C42A39591AE2FB9200BB1CB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = FourRick/Bridge.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C42A395A1AE2FB9200BB1CB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = FourRick/Bridge.h;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C42A395C1AE2FB9200BB1CB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FourRick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C42A395D1AE2FB9200BB1CB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FourRick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C42A395F1AE2FB9200BB1CB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FourRickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FourRick.app/FourRick";
+			};
+			name = Debug;
+		};
+		C42A39601AE2FB9200BB1CB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FourRickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FourRick.app/FourRick";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C42A39371AE2FB9200BB1CB4 /* Build configuration list for PBXProject "FourRick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42A39591AE2FB9200BB1CB4 /* Debug */,
+				C42A395A1AE2FB9200BB1CB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42A395B1AE2FB9200BB1CB4 /* Build configuration list for PBXNativeTarget "FourRick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42A395C1AE2FB9200BB1CB4 /* Debug */,
+				C42A395D1AE2FB9200BB1CB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C42A395E1AE2FB9200BB1CB4 /* Build configuration list for PBXNativeTarget "FourRickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42A395F1AE2FB9200BB1CB4 /* Debug */,
+				C42A39601AE2FB9200BB1CB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C42A39341AE2FB9200BB1CB4 /* Project object */;
+}
