@@ -9,7 +9,7 @@
 
 import UIKit
 protocol CreateToDoDelegate{
-    func createToDoDidCreateItem(todo: ToDoItem)
+    func createToDoDidCreateItem(todo: CDToDoItem)
 }
 
 class CreateToDoViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, SelectColorDelegate {
@@ -50,8 +50,18 @@ class CreateToDoViewController: UIViewController, UIPickerViewDataSource, UIPick
             
             
             
-            var toDoItem = ToDoItem(title: titleTextField.text,note: subtitle,color: col)
+            //var toDoItem = CDToDoItem(title: titleTextField.text,note: subtitle,color: col)
+            
+            var toDoItem = CoreDataManager.sharedInstance.createEntityWithClassName("CDToDoItem") as CDToDoItem
+            
+            toDoItem.title = titleTextField.text
+            toDoItem.note = subtitle
+
+            toDoItem.color = 1
+
             delegate?.createToDoDidCreateItem(toDoItem)
+            CoreDataManager.sharedInstance.saveContext()
+            
             self.dismissViewControllerAnimated(true, completion: nil)
            
         } else {

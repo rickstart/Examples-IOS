@@ -17,6 +17,10 @@
 		C4649FEB1A7D810800B63C0B /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4649FEA1A7D810800B63C0B /* ToDoListViewController.swift */; };
 		C4B3BA481A86C48200A3A795 /* CreateToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3BA471A86C48200A3A795 /* CreateToDoViewController.swift */; };
 		C4B3BA4A1A86E44A00A3A795 /* SelectColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3BA491A86E44A00A3A795 /* SelectColorViewController.swift */; };
+		C4C6138E1B1A63210010C2FD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6138D1B1A63210010C2FD /* CoreDataManager.swift */; };
+		C4C613901B1A63660010C2FD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C6138F1B1A63660010C2FD /* CoreData.framework */; };
+		C4C613921B1A6B020010C2FD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C613911B1A6B020010C2FD /* Person.swift */; };
+		C4C613A41B1A8FA70010C2FD /* CDToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C613A31B1A8FA70010C2FD /* CDToDoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		C4649FEA1A7D810800B63C0B /* ToDoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		C4B3BA471A86C48200A3A795 /* CreateToDoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateToDoViewController.swift; sourceTree = "<group>"; };
 		C4B3BA491A86E44A00A3A795 /* SelectColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectColorViewController.swift; sourceTree = "<group>"; };
+		C4C6138D1B1A63210010C2FD /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C4C6138F1B1A63660010C2FD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C4C613911B1A6B020010C2FD /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C4C613A31B1A8FA70010C2FD /* CDToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDToDoItem.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C613901B1A63660010C2FD /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +76,7 @@
 		C4649FB91A7D80AE00B63C0B = {
 			isa = PBXGroup;
 			children = (
+				C4C6138F1B1A63660010C2FD /* CoreData.framework */,
 				C4649FC41A7D80AE00B63C0B /* MyToDoList */,
 				C4649FDD1A7D80AE00B63C0B /* MyToDoListTests */,
 				C4649FC31A7D80AE00B63C0B /* Products */,
@@ -89,11 +99,14 @@
 				C4649FCC1A7D80AE00B63C0B /* ViewController.swift */,
 				C4649FEA1A7D810800B63C0B /* ToDoListViewController.swift */,
 				C4B3BA471A86C48200A3A795 /* CreateToDoViewController.swift */,
+				C4C6138D1B1A63210010C2FD /* CoreDataManager.swift */,
 				C4B3BA491A86E44A00A3A795 /* SelectColorViewController.swift */,
 				C4649FCE1A7D80AE00B63C0B /* Main.storyboard */,
 				C4649FD11A7D80AE00B63C0B /* Images.xcassets */,
 				C4649FD31A7D80AE00B63C0B /* LaunchScreen.xib */,
 				C4649FC91A7D80AE00B63C0B /* MyToDoList.xcdatamodeld */,
+				C4C613A31B1A8FA70010C2FD /* CDToDoItem.swift */,
+				C4C613911B1A6B020010C2FD /* Person.swift */,
 				C4649FC51A7D80AE00B63C0B /* Supporting Files */,
 			);
 			path = MyToDoList;
@@ -225,10 +238,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4649FEB1A7D810800B63C0B /* ToDoListViewController.swift in Sources */,
+				C4C613A41B1A8FA70010C2FD /* CDToDoItem.swift in Sources */,
 				C4649FCD1A7D80AE00B63C0B /* ViewController.swift in Sources */,
 				C4B3BA481A86C48200A3A795 /* CreateToDoViewController.swift in Sources */,
 				C4649FC81A7D80AE00B63C0B /* AppDelegate.swift in Sources */,
 				C4B3BA4A1A86E44A00A3A795 /* SelectColorViewController.swift in Sources */,
+				C4C6138E1B1A63210010C2FD /* CoreDataManager.swift in Sources */,
+				C4C613921B1A6B020010C2FD /* Person.swift in Sources */,
 				C4649FCB1A7D80AE00B63C0B /* MyToDoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
